@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(95, 173, 255, 0.35), transparent 35%),
+    linear-gradient(150deg, #06141f 0%, #0e2438 40%, #0a1d2d 100%);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  color: rgba(101, 159, 165, 1);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color:rgba(101, 159, 165, 1);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 0 18px;
+  background: linear-gradient(135deg, var(--primary), #7aa9ff);
+  color: rgba(101, 159, 165, 1);
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 25px rgba(169, 174, 181, 0.28);
+}
+
+.weather-card {
+  border-radius: 28px;
+  padding: 28px;
+  height: 100%;
+}

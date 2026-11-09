@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Počasí v ČR</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style_ai.css" />
+    <link rel="icon" type="image/png" href="source/favicon_io/favicon.ico" >
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Meteorologická předpověď</p>
+          <h1>Počasí v ČR</h1>
+        </div>
+      </header>
+
+        <section class="result-panel" id="resultPanel" aria-live="polite">
+          <div class="loading hidden" id="loading">Načítám počasí...</div>
+          <div class="weather-card" id="weatherCard">
+            <div class="weather-header">
+              <div>
+                <p class="location-label">Místo</p>
+                <h2 id="locationName">Olomouc</h2>
+              </div>
+              <span class="date-badge" id="dateBadge">Dnes</span>
+            </div>
+
+            <div class="weather-main">
+              <div class="temp-block">
+                <span class="weather-icon" id="weatherIcon">☀️</span>
+                <div>
+                  <div class="temp-value" id="tempValue">--°C</div>
+                  <div class="weather-description" id="weatherDescription">Načítám...</div>
+                </div>
+              </div>
+
+              <div class="metrics-grid">
+                <div class="metric">
+                  <span>Min</span>
+                  <strong id="tempMin">--°C</strong>
+                </div>
+                <div class="metric">
+                  <span>Max</span>
+                  <strong id="tempMax">--°C</strong>
+                </div>
+                <div class="metric">
+                  <span>Srážky</span>
+                  <strong id="rainChance">--%</strong>
+                </div>
+                <div class="metric">
+                  <span>Vítr</span>
+                  <strong id="windSpeed">-- km/h</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-footer">
+              <div>
+                <span class="label">Východ slunce</span>
+                <strong id="sunrise">--:--</strong>
+              </div>
+              <div>
+                <span class="label">Západ slunce</span>
+                <strong id="sunset">--:--</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
